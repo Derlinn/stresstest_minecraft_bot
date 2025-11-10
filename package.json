@@ -1,0 +1,33 @@
+{
+  "name": "naarabots",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "Derlinnn",
+  "description": "Bots to stresstest server",
+  "keywords": [
+    "minecraft",
+    "bots",
+    "electron"
+  ],
+  "dependencies": {
+    "mineflayer": "^4.23.0"
+  },
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "category": "your.app.category.type"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-packager . NaaraMCBot",
+    "app:dir": "electron-builder --dir",
+    "app:dist": "electron-builder"
+  }
+}
